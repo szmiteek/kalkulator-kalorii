@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 
 const MongoClient = require('mongodb').MongoClient
-MongoClient.connect('mongodb+srv://mongo_user:haslo123@cluster0.2pvjp.mongodb.net/testowa?retryWrites=true&w=majority', { useUnifiedTopology: true }
+MongoClient.connect(process.env.MONGODB_URI || 'mongodb+srv://mongo_user:haslo123@cluster0.2pvjp.mongodb.net/testowa?retryWrites=true&w=majority', { useUnifiedTopology: true }
 ).then((client) => {
     console.log('połączono z bazą danych')
     app.locals.db = client.db('testowa')
