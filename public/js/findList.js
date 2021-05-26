@@ -2,7 +2,7 @@
 document.getElementById("szukacz").addEventListener('input', (event) => {
     const wpisywane = event.target.value.toLowerCase()
 
-    fetch("https://gentle-fjord-71055.herokuapp.com/findList", { method: "POST", body: JSON.stringify({ valueText: wpisywane }), headers: { "Content-Type": "application/json" } })
+    fetch("/findList", { method: "POST", body: JSON.stringify({ valueText: wpisywane }), headers: { "Content-Type": "application/json" } })
         .then((res) => (res.json()))
         .then((produkty) => {
             console.log(produkty)
