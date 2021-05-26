@@ -5,7 +5,6 @@ document.getElementById("szukacz").addEventListener('input', (event) => {
     fetch("/findList", { method: "POST", body: JSON.stringify({ valueText: wpisywane }), headers: { "Content-Type": "application/json" } })
         .then((res) => (res.json()))
         .then((produkty) => {
-            console.log(produkty)
             document.getElementById('lista').innerHTML = ""
             produkty.forEach(element => createListElement(element, "lista"))
 
