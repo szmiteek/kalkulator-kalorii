@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
- 
+
 
     <div class="header">
-        <h1>TYTUŁ</h1> 
+        <h1>TYTUŁ</h1>
     </div>
-              
-    <div id="left" class="column left"> 
+
+    <div id="left" class="column left">
         <h2>Znajdź produkt</h2>
         <input type="search" placeholder="Wpisz nazwe" id="szukacz"><br>
         <ul id="lista">
@@ -24,25 +26,25 @@
         <h3>Przykładowe produkty</h3>
         <ul id="randomList">
         </ul>
-    
+
     </div>
 
     <div class="column middle">
         <header>
-        <h2>Dodane produkty</h2>
+            <h2>Dodane produkty</h2>
         </header>
-            <table id="table"> 
-                <tr>
-                    <td><b>Ile gramów?</b></td>
-                    <td><b>Produkt</b></td>
-                    <td><b>Białko</b></td>
-                    <td><b>Węglowodany</b></td>
-                    <td><b>Tłuszcze</b></td>
-                    <td><b>Kalorie</b></td>
-                </tr>
-             
-            </table>
-            
+        <table id="table">
+            <tr>
+                <td><b>Ile gramów?</b></td>
+                <td><b>Produkt</b></td>
+                <td><b>Białko</b></td>
+                <td><b>Węglowodany</b></td>
+                <td><b>Tłuszcze</b></td>
+                <td><b>Kalorie</b></td>
+            </tr>
+
+        </table>
+
         <div id="bottom">
             <table>
                 <tr>
@@ -54,22 +56,22 @@
                     <td id="s4"></td>
                     <td></td>
                 </tr>
-                   
-           </table>
+
+            </table>
         </div>
     </div>
-    
+
     <div class="column right">
         <h2>Dodaj produkt do bazy</h2><br>
         <p>Wpisz wartości odżywcze na 100g</p>
         <form>
-            <input id = "name" type="text" required placeholder="Nazwa">
-            <input class="macro" id = "B" type="text" required placeholder="Białko">
+            <input id="name" type="text" required placeholder="Nazwa">
+            <input class="macro" id="B" type="text" required placeholder="Białko">
             <div>
-            <input class="macro" id = "W" type="text" required placeholder="Węglowodany">
-            <input class="macro" id = "T" type="text" required placeholder="Tłuszcze">
-            <button id="add"></button>
-            </div>    
+                <input class="macro" id="W" type="text" required placeholder="Węglowodany">
+                <input class="macro" id="T" type="text" required placeholder="Tłuszcze">
+                <button id="add"></button>
+            </div>
         </form>
     </div>
 
@@ -79,7 +81,8 @@
     <script src="js/newProdukt.js"></script>
     <script src="js/findList.js"></script>
     <script src="js/RandomList.js"></script>
-    
-       
+
+
 </body>
+
 </html>
